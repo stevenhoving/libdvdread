@@ -55,3 +55,7 @@ build-win32:
         - cd build
         - ../configure --host=i686-w64-mingw32
         - make -j $(getconf _NPROCESSORS_ONLN)
+
+artifacts:
+  - path: build\*.*
+    name: Library
